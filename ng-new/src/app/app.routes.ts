@@ -3,6 +3,7 @@ import { MY_NUMBER } from './components/token/number.token';
 import { ENVIRONMENT_INITIALIZER } from '@angular/core';
 import { PageCComponent } from './components/page-c/page-c.component';
 import { authGuard } from './guards/auth.guard';
+import { SignalsDemoComponent } from './components/signals-demo/signals-demo.component';
 
 
 export const routes: Routes = [
@@ -43,5 +44,9 @@ export const routes: Routes = [
   {
     path: 'page-c', component: PageCComponent, 
     loadChildren: () => import('./components/page-c/page-c-routes').then()
+  }, 
+  {
+
+    path: 'signals', component: SignalsDemoComponent
   }
 ];
