@@ -1,5 +1,21 @@
-<app-first></app-first>
-<app-second></app-second>
+<h5>LoggedIn: {{isLoggedIn$ | async}}</h5>
+<button (click)="auth.toggleStatus()">Toggle Auth</button>
+
+
+<nav mat-tab-nav-bar [tabPanel]="myPanel">
+  <a mat-tab-link myLink="page-a">Page A</a>
+  <a mat-tab-link myLink="page-b">Page B</a>
+  <a mat-tab-link myLink="page-c">Page C</a>
+</nav>
+<mat-tab-nav-panel #myPanel></mat-tab-nav-panel>
+
+
+<h1>My number is {{myNumber}}</h1>
+<div class="router-container">
+  <router-outlet></router-outlet>
+</div>
+
+
 <h1 highlight>Hello World</h1>
 
 <ul>
@@ -10,4 +26,4 @@
 
 <img src="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ-1200-80.jpg">
 
-<button>Hello World</button>
+<button (click)="onOpen()">Hello World</button>

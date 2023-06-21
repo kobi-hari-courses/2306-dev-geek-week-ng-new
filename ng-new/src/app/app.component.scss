@@ -1,3 +1,14 @@
+.router-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid brown;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+
+
 h1 {
     text-decoration: red underline;
 }
